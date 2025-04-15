@@ -1,0 +1,35 @@
+/* 
+background color 
+#6943FF
+
+text/button color container1
+FFFFFF
+
+text heading color container2
+#5A537B
+conversion text color container2
+#353535
+foreground color container2
+#FFFFFF
+background color container2
+#F4F4F4
+-------------------------------------
+
+dark mode colors
+
+background color
+#6943FF 
+
+
+
+*/
+
+
+
+
+body {
+    width: 550px;   
+    height: 730px;
+    margin: 0 auto;
+
+}
