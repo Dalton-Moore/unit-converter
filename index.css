@@ -1,4 +1,6 @@
 /* 
+color palette from figma design
+-------------------------------------
 Light mode colors
 
 background color 
@@ -40,38 +42,19 @@ background color container2
 
 */
 
+/* body */
 
 body {
     margin: 0px auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
+    height: 100vh;
     font-family: "Inter", serif;
     background-color: #252424;
 }
 
-/* .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #1C1C1C;
-    height: 1354px;
-    width: 979px;
-    padding-top: 64px;
-    padding-bottom: 64px;
-    border-radius: 5px;
-} */
-
-/* .container {
-    background-color: #1F2937;
-    height: 550px;
-    width: 729px;
-} */
-
-
-
-/* container 1, h1, button----------------------------------------------------------------------------------- */
+/* header, container 1, h1 text*/
 
 .container1 {
     background-color: #6943FF;
@@ -88,7 +71,6 @@ body {
     font-size: 28px;
     color: #FFFFFF;
     text-align: center;
-    /* margin-top: -75px; */
 }
 
 /* input and btn */
@@ -122,7 +104,6 @@ body {
     color: #3D3D3D;
     margin-top: 5px;
     cursor: pointer;
-    /* cursor: pointer; */
 }
 
 #convert-btn:hover {
@@ -130,7 +111,7 @@ body {
     transition: 0.3s;
 }
 
-/* length, Volume, Mass */
+/* container2 output for length, Volume, Mass */
 
 .container2 {
     background-color: #F4F4F4;
@@ -211,8 +192,9 @@ body {
 
 /* Media query for mobile devices (480px and below) */
 @media (max-width: 480px) {
+    /* changed width to auto was 100% */
     .container1 {
-        width: 100%;
+        width: auto;
         height: auto;
         padding: 15px;
     }
