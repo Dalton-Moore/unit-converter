@@ -7,8 +7,8 @@ ctr + I
 
 
 // variables for the input and output elements
-let inputEl = document.getElementById("input");
-let convetBtn = document.getElementById("convert-btn");
+let inputEl = document.getElementById("input-el");
+let convertBtn = document.getElementById("convert-btn");
 let lengthEl = document.getElementById("length-el");
 let volumeEl = document.getElementById("volume-el");
 let massEl = document.getElementById("mass-el");
@@ -26,7 +26,7 @@ const poundToKilogram = 1 / kilogramToPound;
 
 // event listeners for the buttons
 convertBtn.addEventListener("click", function() {
-    let baseValue = parseFloat(inputEl.value);
+    let baseValue = parseFloat(inputEl.value); // coonvert the input value to a float number
 
     // if statement that takes the DOM and returns a string message
     if (isNaN(baseValue)) {
