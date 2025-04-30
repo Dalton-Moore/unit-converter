@@ -2,7 +2,6 @@
 1 meter = 3.281 feet
 1 liter = 0.264 gallon
 1 kilogram = 2.204 pound
-ctr + I 
 */
 
 
@@ -24,11 +23,11 @@ const feetToMeter = 1 / meterToFeet;
 const gallonToLiter = 1 / literToGallon;
 const poundToKilogram = 1 / kilogramToPound;
 
-// event listeners for the buttons
+// event listener for the button click event
 convertBtn.addEventListener("click", function() {
-    let baseValue = parseFloat(inputEl.value); // coonvert the input value to a float number
+    let baseValue = parseFloat(inputEl.value); // convert the input value to a float number
 
-    // if statement that takes the DOM and returns a string message
+    // if statement that takes the DOM and returns a string message if the input is not a number
     if (isNaN(baseValue)) {
         lengthEl.textContent = "Please enter a valid number.";
         volumeEl.textContent = "Please enter a valid number.";  
@@ -61,7 +60,7 @@ inputEl.addEventListener("keypress", function(event) {
 });
 
 // addevent listener for the inputel varito max numbers you can enter is 0-3
-inputEl.addEventListener("input", function() {
+inputEl.addEventListener("input-el", function() {
     if (inputEl.value.length > 3) { // check if the input length is greater than 3
         inputEl.value = inputEl.value.slice(0, 3); // slice the input value to keep only the first 3 characters
     }
